@@ -19,10 +19,6 @@ const TimerStatus = () => {
     }
   }
 
-  const testclick = (id) => {
-    console.log(`test ${id}`)
-  }
-
   return (
     <fieldset className="w-full grid grid-cols-3">
       {status.map( item => (
