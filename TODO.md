@@ -1,4 +1,3 @@
-[ ] Add delimiting Colors
 [ ] Change Timer time depending state
 [ ] Timer controls Functionality
 [ ] Change Button name to Icons
@@ -8,3 +7,4 @@
 [ ] 
 [ ] 
 [ X ] Add To-Do section
+[ X ] Add delimiting Colors
