@@ -5,6 +5,6 @@
 [ ] 
 [ ] 
 [ ] 
-[ ] 
 [ X ] Add To-Do section
 [ X ] Add delimiting Colors
+[ X ] Add initial state Timer
