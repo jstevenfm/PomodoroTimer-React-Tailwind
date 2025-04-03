@@ -1,4 +1,8 @@
 [ ] Timer controls Functionality
+    [ X ] Reset button
+    [  ] Play button
+        Se puede utilizar setInterval
+    [  ] Next button
 [ ] Change Button name to Icons
 [ ] Change theme depending state
 [ ] 
