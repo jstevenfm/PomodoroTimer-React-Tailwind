@@ -12,8 +12,8 @@ const TimerContainer = () => {
 
   return (
     <section className="flex flex-col items-center justify-center my-14 mx-auto">
-      <TimerStatus />
-      <TimerCounter minutes={timer.minutes} seconds={timer.seconds} />
+      <TimerStatus setTimer={setTimer}  />
+      <TimerCounter minutes={timer.minutes} seconds={timer.seconds} setTimer={setTimer} />
       <TimerControls />
     </section>
   );

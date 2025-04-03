@@ -1,7 +1,6 @@
-import { useState } from "react"
 import ButtonRadioStatus from "../../ui/BtnRadioStatus"
 
-const TimerStatus = () => {
+const TimerStatus = ({ setTimer }) => {
   const status = [
     {id: 'pomodoro', text: 'Pomodoro', defaultChecked: true},
     {id: 'short-break', text: 'Short Break', defaultChecked: false},
@@ -11,10 +10,13 @@ const TimerStatus = () => {
   const handleStatus = (id) => {
     switch (id) {
       case 'pomodoro':
+        setTimer({ minutes: 25, seconds: 0 })
         break
       case 'short-break':
+        setTimer({ minutes: 5, seconds: 0 })
         break
       case 'long-break':
+        setTimer({ minutes: 15, seconds: 0 })
         break
     }
   }
