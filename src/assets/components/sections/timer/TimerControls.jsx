@@ -14,7 +14,7 @@ const TimerControls = ({ timer, setTimer }) => {
 
   const currentTimer = {
     minutes: timer.minutes,
-    seconds: timer.seconds - 2,
+    seconds: timer.seconds,
   }
 
   const resetTimer = () => {

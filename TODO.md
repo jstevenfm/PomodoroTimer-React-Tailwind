@@ -3,6 +3,7 @@
     [  ] Play button
         Se puede utilizar setInterval
     [  ] Next button
+[ ] Add pomodoro Counter
 [ ] Change Button name to Icons
 [ ] Change theme depending state
 [ ] 
