@@ -1,6 +1,7 @@
 [ ] Timer controls Functionality
     [ X ] Reset button
     [  ] Play button
+        [  ] Figure out how to use 'useEffect'
         Se puede utilizar setInterval
     [  ] Next button
 [ ] Add pomodoro Counter
