@@ -3,3 +3,7 @@
 * {
   @apply transition-all
 }
+
+body.pomodoro {
+  @apply bg-yellow-50
+}

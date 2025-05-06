@@ -1,12 +1,14 @@
 [ ] Timer controls Functionality
     [ X ] Reset button
-    [  ] Play button
-        [  ] Figure out how to use 'useEffect'
+    [ X ] Play button
+        [ X ] Figure out how to use 'useEffect' <!-- Puedo seguir viendo el video 2 del curso de react de midudev -->
         Se puede utilizar setInterval
+    [  ] Pause button
     [  ] Next button
 [ ] Add pomodoro Counter
 [ ] Change Button name to Icons
 [ ] Change theme depending state
+    [  ] Use document.body.classList.toggle <!------ Ver video 2 del curso de react de midudev  -------->
 [ ] 
 [ ] 
 [ ] 
