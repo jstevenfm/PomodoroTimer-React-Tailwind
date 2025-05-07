@@ -1,6 +1,6 @@
-const BtnTimerControls = ({ title, onclick }) => {
+const BtnTimerControls = ({ title, onclick, className }) => {
   return (
-    <button className="cursor-pointer hover:scale-105" title={title} onClick={onclick}>{title}</button>
+    <button className={`cursor-pointer hover:scale-105 ${className}`} title={title} onClick={onclick}>{title}</button>
 
   )
 }

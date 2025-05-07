@@ -1,10 +1,10 @@
 [ ] Timer controls Functionality
-    [ X ] Reset button
     [ X ] Play button
         [ X ] Figure out how to use 'useEffect' <!-- Puedo seguir viendo el video 2 del curso de react de midudev -->
         Se puede utilizar setInterval
-    [  ] Pause button
+    [ X ] Pause button
     [  ] Next button
+    [  ] Reset button
 [ ] Add pomodoro Counter
 [ ] Change Button name to Icons
 [ ] Change theme depending state

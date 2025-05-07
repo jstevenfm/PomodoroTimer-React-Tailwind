@@ -6,24 +6,34 @@ const TimerControls = ({ timer, setTimer }) => {
   const [isActive, setIsActive] = useState(false);
 
   const controls = [
-    { title: "Reset" },
-    { title: "Start" },
-    { title: "Next State" },
+    {
+      title: "Reset",
+      className: "",
+    },
+    {
+      title: "Start",
+      className: isActive ? "hidden" : "",
+    },
+    {
+      title: "Pause",
+      className: isActive ? "" : "hidden",
+    },
+    {
+      title: "Next State",
+      className: "",
+    },
   ];
-
-  const actualTimerStatus = {
-    minutes: timer.minutes,
-    seconds: timer.seconds,
-  };
+  const interval = null;
 
   const resetTimer = () => {
-    setTimer(actualTimerStatus);
-    // console.log("Reset Timer", actualTimerStatus.minutes, actualTimerStatus.seconds);
+    clearInterval(interval);
+    setIsActive(false);
+    console.log("Reset Timer", interval);
   };
 
   useEffect(() => {
     if (isActive) {
-      let interval = setInterval(() => {
+      const interval = setInterval(() => {
         setTimer((prevTime) => {
           let { minutes, seconds } = prevTime;
 
@@ -44,6 +54,10 @@ const TimerControls = ({ timer, setTimer }) => {
     }
   }, [isActive, setTimer]);
 
+  const pauseTimer = () => {
+    setIsActive(false);
+  };
+
   const nextState = () => {};
 
   const handleTimer = (e) => {
@@ -54,7 +68,9 @@ const TimerControls = ({ timer, setTimer }) => {
         break;
       case "Start":
         setIsActive(true);
-        console.log("Start Timer", timer.minutes, timer.seconds);
+        break;
+      case "Pause":
+        pauseTimer();
         break;
       case "Next State":
         nextState();
@@ -72,6 +88,7 @@ const TimerControls = ({ timer, setTimer }) => {
           key={control.title}
           title={control.title}
           onclick={handleTimer}
+          className={control.className}
         />
       ))}
     </div>
