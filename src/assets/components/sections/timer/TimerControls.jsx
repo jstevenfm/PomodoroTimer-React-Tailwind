@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 import BtnTimerControls from "../../ui/BtnTimerControls";
 
-const TimerControls = ({ timer, setTimer }) => {
+const TimerControls = ({ setTimer }) => {
   const [isActive, setIsActive] = useState(false);
 
   const controls = [
