@@ -54,10 +54,6 @@ const TimerControls = ({ setTimer }) => {
     }
   }, [isActive, setTimer]);
 
-  const pauseTimer = () => {
-    setIsActive(false);
-  };
-
   const nextState = () => {};
 
   const handleTimer = (e) => {
@@ -70,7 +66,7 @@ const TimerControls = ({ setTimer }) => {
         setIsActive(true);
         break;
       case "Pause":
-        pauseTimer();
+        setIsActive(false);
         break;
       case "Next State":
         nextState();
