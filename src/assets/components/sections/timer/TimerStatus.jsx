@@ -1,11 +1,6 @@
 import ButtonRadioStatus from "../../ui/BtnRadioStatus"
 
-const TimerStatus = ({ setTimer }) => {
-  const status = [
-    {id: 'pomodoro', text: 'Pomodoro', defaultChecked: true},
-    {id: 'short-break', text: 'Short Break', defaultChecked: false},
-    {id: 'long-break', text: 'Long Break', defaultChecked: false}
-  ]
+const TimerStatus = ({ setTimer, status }) => {
 
   const handleStatus = (id) => {
     switch (id) {
