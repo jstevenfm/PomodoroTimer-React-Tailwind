@@ -25,9 +25,6 @@ const TimerContainer = () => {
       defaultChecked: false,
     },
   ];
-  const pomodoroStatus = document.querySelector("#pomodoro");
-  const shortBreakStatus = document.querySelector("#shortBreak");
-  const longBreakStatus = document.querySelector("#longBreak");
 
   const [timer, setTimer] = useState(status[0].timer);
   const [currentStatus, setCurrentStatus] = useState(status[0].id);
@@ -39,9 +36,6 @@ const TimerContainer = () => {
       <TimerControls
         setTimer={setTimer}
         status={status}
-        pomodoroStatus={pomodoroStatus}
-        shortBreakStatus={shortBreakStatus}
-        longBreakStatus={longBreakStatus}
         currentStatus={currentStatus}
       />
     </section>

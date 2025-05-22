@@ -5,9 +5,6 @@ import BtnTimerControls from "../../ui/BtnTimerControls";
 const TimerControls = ({
   setTimer,
   status,
-  pomodoroStatus,
-  shortBreakStatus,
-  longBreakStatus,
   currentStatus
 }) => {
   const [isActive, setIsActive] = useState(false);
