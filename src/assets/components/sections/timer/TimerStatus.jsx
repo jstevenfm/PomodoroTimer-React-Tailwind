@@ -5,13 +5,16 @@ const TimerStatus = ({ setTimer, status }) => {
   const handleStatus = (id) => {
     switch (id) {
       case 'pomodoro':
-        setTimer({ minutes: 25, seconds: 0 })
+        // setTimer({ minutes: 25, seconds: 0 })
+        setTimer(status[0].timer)
         break
       case 'short-break':
-        setTimer({ minutes: 5, seconds: 0 })
+        // setTimer({ minutes: 5, seconds: 0 })
+        setTimer(status[1].timer)
         break
       case 'long-break':
-        setTimer({ minutes: 15, seconds: 0 })
+        // setTimer({ minutes: 15, seconds: 0 })
+        setTimer(status[2].timer)
         break
     }
   }
