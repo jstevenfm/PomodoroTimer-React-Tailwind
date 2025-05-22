@@ -23,7 +23,6 @@ const TimerControls = ({ setTimer, status }) => {
       className: "",
     },
   ];
-  const interval = null;
 
   const resetTimer = () => {
     clearInterval(interval);
