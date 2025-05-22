@@ -2,7 +2,14 @@ import { useEffect, useState } from "react";
 
 import BtnTimerControls from "../../ui/BtnTimerControls";
 
-const TimerControls = ({ setTimer, status }) => {
+const TimerControls = ({
+  setTimer,
+  status,
+  pomodoroStatus,
+  shortBreakStatus,
+  longBreakStatus,
+  currentStatus
+}) => {
   const [isActive, setIsActive] = useState(false);
 
   const controls = [
@@ -25,9 +32,18 @@ const TimerControls = ({ setTimer, status }) => {
   ];
 
   const resetTimer = () => {
-    clearInterval(interval);
     setIsActive(false);
-    console.log("Reset Timer", interval);
+    switch (currentStatus) {
+      case 'pomodoro':
+        setTimer(status[0].timer)
+        break
+      case 'short-break':
+        setTimer(status[1].timer)
+        break
+      case 'long-break':
+        setTimer(status[2].timer)
+        break
+    }
   };
 
   useEffect(() => {

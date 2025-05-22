@@ -6,20 +6,46 @@ import TimerControls from "./TimerControls";
 
 const TimerContainer = () => {
   const status = [
-    {id: 'pomodoro', text: 'Pomodoro', timer: { minutes: 25, seconds: 0 }, defaultChecked: true},
-    {id: 'short-break', text: 'Short Break', timer: { minutes: 5, seconds: 0 }, defaultChecked: false},
-    {id: 'long-break', text: 'Long Break', timer: { minutes: 15, seconds: 0 }, defaultChecked: false}
-  ]
+    {
+      id: "pomodoro",
+      text: "Pomodoro",
+      timer: { minutes: 25, seconds: 0 },
+      defaultChecked: true,
+    },
+    {
+      id: "short-break",
+      text: "Short Break",
+      timer: { minutes: 5, seconds: 0 },
+      defaultChecked: false,
+    },
+    {
+      id: "long-break",
+      text: "Long Break",
+      timer: { minutes: 15, seconds: 0 },
+      defaultChecked: false,
+    },
+  ];
+  const pomodoroStatus = document.querySelector("#pomodoro");
+  const shortBreakStatus = document.querySelector("#shortBreak");
+  const longBreakStatus = document.querySelector("#longBreak");
 
-  const [timer, setTimer] = useState(status[0].timer)
+  const [timer, setTimer] = useState(status[0].timer);
+  const [currentStatus, setCurrentStatus] = useState(status[0].id);
 
   return (
     <section className="flex flex-col items-center justify-center my-14 mx-auto">
-      <TimerStatus setTimer={setTimer} status={status} />
+      <TimerStatus setTimer={setTimer} status={status} setCurrentStatus={setCurrentStatus} />
       <TimerCounter minutes={timer.minutes} seconds={timer.seconds} />
-      <TimerControls setTimer={setTimer} status={status} />
+      <TimerControls
+        setTimer={setTimer}
+        status={status}
+        pomodoroStatus={pomodoroStatus}
+        shortBreakStatus={shortBreakStatus}
+        longBreakStatus={longBreakStatus}
+        currentStatus={currentStatus}
+      />
     </section>
   );
 };
 
-export default TimerContainer
+export default TimerContainer;
