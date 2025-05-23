@@ -8,6 +8,7 @@ const TimerControls = ({
   currentStatus
 }) => {
   const [isActive, setIsActive] = useState(false);
+  const [counterPomodoro, setCounterPomodoro] = useState(0);
 
   const controls = [
     {
