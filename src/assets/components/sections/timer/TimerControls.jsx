@@ -5,7 +5,8 @@ import BtnTimerControls from "../../ui/BtnTimerControls";
 const TimerControls = ({
   setTimer,
   status,
-  currentStatus
+  currentStatus,
+  setCurrentStatus
 }) => {
   const [isActive, setIsActive] = useState(false);
   const [counterPomodoro, setCounterPomodoro] = useState(0);
@@ -57,7 +58,9 @@ const TimerControls = ({
           }
           if (minutes < 0) {
             clearInterval(interval);
-            nextState();
+            setTimeout(() => {
+              nextState();
+            }, 0);
           }
 
           return { minutes, seconds };
@@ -65,9 +68,26 @@ const TimerControls = ({
       }, 1000);
       return () => clearInterval(interval);
     }
-  }, [isActive, setTimer]);
+  }, [isActive, setTimer, currentStatus]);
 
-  const nextState = () => {};
+  const nextState = () => {
+    if (currentStatus === "pomodoro") {
+      if (counterPomodoro < 3) {
+        setCurrentStatus("short-break");
+        setTimer(status[1].timer);
+        setCounterPomodoro(counterPomodoro + 1);
+      }
+      if (counterPomodoro === 3) {
+        setCurrentStatus("long-break");
+        setTimer(status[2].timer);
+        setCounterPomodoro(0);
+      }
+    } else if (currentStatus === "short-break" || currentStatus === "long-break") {
+      setCurrentStatus("pomodoro");
+      setTimer(status[0].timer);
+    }
+    setIsActive(false);
+  };
 
   const handleTimer = (e) => {
     const btn = e.target.innerText;
@@ -83,7 +103,6 @@ const TimerControls = ({
         break;
       case "Next State":
         nextState();
-        console.log("Next State");
         break;
       default:
         break;

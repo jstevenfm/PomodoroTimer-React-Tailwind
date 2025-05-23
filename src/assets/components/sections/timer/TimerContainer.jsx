@@ -37,6 +37,7 @@ const TimerContainer = () => {
         setTimer={setTimer}
         status={status}
         currentStatus={currentStatus}
+        setCurrentStatus={setCurrentStatus}
       />
     </section>
   );
