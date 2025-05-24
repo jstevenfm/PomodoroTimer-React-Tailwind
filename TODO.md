@@ -1,4 +1,3 @@
-[ ] Change en cambio desde TimerStatus que se pause el contador
 [ ] Change Button name to Icons
 [ ] Change theme depending state
     [  ] Use document.body.classList.toggle <!------ Ver video 2 del curso de react de midudev  -------->
