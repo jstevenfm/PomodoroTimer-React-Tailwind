@@ -30,7 +30,7 @@ const TimerContainer = () => {
   const [currentStatus, setCurrentStatus] = useState(status[0].id);
 
   return (
-    <section className="flex flex-col items-center justify-center my-14 mx-auto">
+    <section className="hidden flex flex-col items-center justify-center my-14 mx-auto">
       <TimerStatus setTimer={setTimer} status={status} setCurrentStatus={setCurrentStatus} />
       <TimerCounter minutes={timer.minutes} seconds={timer.seconds} />
       <TimerControls
