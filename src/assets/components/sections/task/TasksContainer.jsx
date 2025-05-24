@@ -1,12 +1,21 @@
-import Header from "../header/Header"
+import { useState } from "react"
+
+import TasksHeader from "./TasksHeader"
+import TasksList from "./TasksList"
 
 const TasksContainer = () => {
+  const [tasks, setTasks] = useState([
+    {
+      id: new Date().getTime(),
+      title: '',
+      completed: false,
+    }
+  ])
+
   return (
     <section className="p-5 rounded-3xl bg-yellow-100 shadow-sm">
-      <header className="flex justify-between items-center">
-        <h2 className="text-xl font-medium">Tasks</h2>
-        <button className="cursor-pointer">Add Task</button>
-      </header>
+      <TasksHeader setTasks={setTasks} />
+      <TasksList tasks={tasks} setTasks={setTasks} />
     </section>
   )
 }
