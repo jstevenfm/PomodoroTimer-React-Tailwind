@@ -4,13 +4,7 @@ import TasksHeader from "./TasksHeader"
 import TasksList from "./TasksList"
 
 const TasksContainer = () => {
-  const [tasks, setTasks] = useState([
-    {
-      id: new Date().getTime(),
-      title: '',
-      completed: false,
-    }
-  ])
+  const [tasks, setTasks] = useState([])
 
   return (
     <section className="p-5 rounded-3xl bg-yellow-100 shadow-sm">
