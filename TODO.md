@@ -1,7 +1,10 @@
+[ ] Add functionality to To-Do list section
 [ ] Change Button name to Icons
 [ ] Change theme depending state
     [  ] Use document.body.classList.toggle <!------ Ver video 2 del curso de react de midudev  -------->
 [ ] Change the button radio in change state
+[ ] 
+[ ] 
 [ ] 
 [ ] 
 [ X ] Add To-Do section
