@@ -1,4 +1,7 @@
 [ ] Add functionality to To-Do list section
+    [  ] Add change visibility of input new task
+    [  ] Add functionality to cancel button of new task form
+    [ X ] Add input for add new task
 [ ] Change Button name to Icons
 [ ] Change theme depending state
     [  ] Use document.body.classList.toggle <!------ Ver video 2 del curso de react de midudev  -------->
