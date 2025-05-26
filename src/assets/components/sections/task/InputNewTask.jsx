@@ -1,4 +1,4 @@
-const InputNewTask = ({ setTasks }) => {
+const InputNewTask = ({ setTasks, className, setShowInputNewTask }) => {
 
   const addNewTask = (e) => {
     e.preventDefault();
@@ -18,10 +18,10 @@ const InputNewTask = ({ setTasks }) => {
   };
 
   return (
-    <form onSubmit={addNewTask} className="flex justify-between items-center bg-yellow-300 mt-5 rounded-xl p-4 gap-4">
+    <form onSubmit={addNewTask} className={`flex justify-between items-center bg-yellow-300 mt-5 rounded-xl p-4 gap-4 ${className}`}>
       <input type="text" name="title" className="flex-2/3" />
         <button type="submit" >Add</button>
-        <button type="reset">Cancel</button>
+        <button type="reset" onClick={() => setShowInputNewTask(false)}>Cancel</button>
 
     </form>
   )
