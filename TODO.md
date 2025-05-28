@@ -1,6 +1,8 @@
 [ ] Add functionality to To-Do list section
     [  ] Add functionality Delete button item in task list
     [  ] Add styles when change checked
+    [  ] Save To-do list in localStorage
+    ---
     [ X ] Add input for add new task
     [ X ] Add functionality to cancel button of new task form
     [ X ] Add change visibility of input new task
