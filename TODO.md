@@ -1,6 +1,6 @@
 [ ] Add functionality to To-Do list section
     [  ] Add styles when change checked
-    [  ] Save To-do list in localStorage
+    [  ] Save To-do list in localStorage  <!--- Ver video de midudev--->
     ---
     [ X ] Add input for add new task
     [ X ] Add functionality to cancel button of new task form
@@ -11,7 +11,7 @@
 [ ] Change Button name to Icons
 [ ] Change theme depending state
     [  ] Use document.body.classList.toggle <!------ Ver video 2 del curso de react de midudev  -------->
-[ ] Change the button radio in change state
+[ ] Change the button radio in change state  <!------ Usar map para cambiar esta del radio button y los timers -->
 [ ] 
 [ ] 
 [ ] 
