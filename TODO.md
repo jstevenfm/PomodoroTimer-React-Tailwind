@@ -1,7 +1,7 @@
+[ ] Change the button radio in change state  <!------ Usar map para cambiar esta del radio button y los timers // Use state checked-->
 [ ] Change Button name to Icons
 [ ] Change theme depending state
     [  ] Use document.body.classList.toggle <!------ Ver video 2 del curso de react de midudev  -------->
-[ ] Change the button radio in change state  <!------ Usar map para cambiar esta del radio button y los timers // Use state checked-->
 [ ] 
 [ ] 
 [ ] 
