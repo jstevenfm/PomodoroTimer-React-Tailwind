@@ -11,6 +11,14 @@ const TasksContainer = () => {
 
   useEffect(() => {
     localStorage.setItem('tasks', JSON.stringify(tasks))
+    tasks.map((task) => {
+      const taskLabel = document.getElementById(task.id)
+      if (taskLabel) {
+        task.completed
+          ? taskLabel.classList.add("line-through")
+          : taskLabel.classList.remove("line-through")
+      }
+    })
   }, [tasks])
 
   return (

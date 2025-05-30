@@ -7,8 +7,6 @@ const TasksList = ({ tasks, setTasks }) => {
         task.id === id ? { ...task, completed: !task.completed } : task
       )
     );
-    const taskLabel = document.getElementById(id);
-    taskLabel ? taskLabel.classList.toggle("line-through") : null;
   };
 
   const deleteTask = (id) => {
@@ -22,6 +20,7 @@ const TasksList = ({ tasks, setTasks }) => {
           key={task.id}
           taskId={task.id}
           taskTitle={task.title}
+          completed={task.completed}
           onClickCheckbox={() => handleCompleteTask(task.id)}
           onClickDeleteBtn={() => deleteTask(task.id)}
         ></TaskListItem>
