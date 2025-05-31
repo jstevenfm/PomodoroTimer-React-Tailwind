@@ -2,6 +2,8 @@ import { useState } from "react";
 
 import InputNewTask from "./InputNewTask";
 
+import IconAddTask from '../../icons/IconAddTask'
+
 const TasksHeader = ({ setTasks }) => {
   const [showInputNewTask, setShowInputNewTask] = useState(false)
 
@@ -13,8 +15,8 @@ const TasksHeader = ({ setTasks }) => {
     <>
       <header className="flex justify-between items-center">
         <h2 className="text-xl font-medium">Tasks</h2>
-        <button onClick={toggleInputNewTask} className="cursor-pointer" >
-          Add Task
+        <button title="Add New Task" onClick={toggleInputNewTask} className="cursor-pointer" >
+          <IconAddTask />
         </button>
       </header>
       <InputNewTask setTasks={setTasks} setShowInputNewTask={setShowInputNewTask} className={showInputNewTask ? '' : 'hidden'} />
