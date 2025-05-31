@@ -77,15 +77,21 @@ const TimerControls = ({
         setCurrentStatus("short-break");
         setTimer(status[1].timer);
         setCounterPomodoro(counterPomodoro + 1);
+        const statusInput = document.getElementById("short-break");
+        statusInput ? statusInput.checked = true : null;
       }
       if (counterPomodoro === 3) {
         setCurrentStatus("long-break");
         setTimer(status[2].timer);
         setCounterPomodoro(0);
+        const statusInput = document.getElementById("long-break");
+        statusInput ? statusInput.checked = true : null;
       }
     } else if (currentStatus === "short-break" || currentStatus === "long-break") {
       setCurrentStatus("pomodoro");
       setTimer(status[0].timer);
+      const statusInput = document.getElementById("pomodoro");
+      statusInput ? statusInput.checked = true : null;
     }
     setIsActive(false);
   };
