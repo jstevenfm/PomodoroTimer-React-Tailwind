@@ -10,3 +10,5 @@ const IconCancelTask = () => {
     </svg>
   )
 }
+
+export default IconCancelTask
