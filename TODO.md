@@ -1,4 +1,3 @@
-[ ] Change Button name to Icons
 [ ] Change theme depending state
     [  ] Use document.body.classList.toggle <!------ Ver video 2 del curso de react de midudev  -------->
 [ ] 
@@ -30,3 +29,4 @@
     [ X ] Save To-do list in localStorage  <!--- Ver video de midudev--->
     [ X ] Add save checked input for task item
 [ X ] Change the button radio in change state  <!------ Usar map para cambiar esta del radio button y los timers // Use state checked-->
+[ X ] Change Button name to Icons
