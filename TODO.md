@@ -1,5 +1,5 @@
 [ ] Change theme depending state
-    [  ] Use document.body.classList.toggle <!------ Ver video 2 del curso de react de midudev  -------->
+    [  ] Use document.body.classList.toggle // Se puede utilizar useEffect<!------ Ver video 2 del curso de react de midudev  -------->
 [ ] 
 [ ] 
 [ ] 
