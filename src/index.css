@@ -1,5 +1,41 @@
 @import "tailwindcss";
 
+@theme {
+  --color-golden-sand-50: #fefcf2;
+  --color-golden-sand-100: #fdf5d7;
+  --color-golden-sand-200: #fcf1c4;
+  --color-golden-sand-300: #fbeaa9;
+  --color-golden-sand-400: #fae699;
+  --color-golden-sand-500: #f9e07f;
+  --color-golden-sand-600: #e3cc74;
+  --color-golden-sand-700: #b19f5a;
+  --color-golden-sand-800: #897b46;
+  --color-golden-sand-900: #695e35;
+
+  --color-ziggurat-50: #f8fbfb;
+  --color-ziggurat-100: #e9f2f4;
+  --color-ziggurat-200: #dfebee;
+  --color-ziggurat-300: #d0e2e7;
+  --color-ziggurat-400: #c7dde2;
+  --color-ziggurat-500: #b9d4db;
+  --color-ziggurat-600: #a8c1c7;
+  --color-ziggurat-700: #83979b;
+  --color-ziggurat-800: #667578;
+  --color-ziggurat-900: #4e595c;
+
+  --color-cruise-50: #f7fcfa;
+  --color-cruise-100: #e7f4f1;
+  --color-cruise-200: #dcefea;
+  --color-cruise-300: #cce8e0;
+  --color-cruise-400: #c2e4da;
+  --color-cruise-500: #b3ddd1;
+  --color-cruise-600: #a3c9be;
+  --color-cruise-700: #7f9d94;
+  --color-cruise-800: #627a73;
+  --color-cruise-900: #4b5d58
+
+}
+
 * {
   @apply transition-all
 }
@@ -7,3 +43,4 @@
 body.pomodoro {
   @apply bg-yellow-50
 }
+
