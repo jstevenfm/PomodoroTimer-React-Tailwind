@@ -1,3 +1,6 @@
+import { status } from '../src/assets/constants.js'
+
+
 import Header from "./assets/components/sections/header/Header"
 import TasksContainer from "./assets/components/sections/task/TasksContainer"
 import TimerContainer from "./assets/components/sections/timer/TimerContainer"
