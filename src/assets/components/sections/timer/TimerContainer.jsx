@@ -6,10 +6,9 @@ import TimerStatus from "./TimerStatus";
 import TimerCounter from "./TimerCounter";
 import TimerControls from "./TimerControls";
 
-const TimerContainer = () => {
+const TimerContainer = ({ currentStatus, setCurrentStatus }) => {
 
   const [timer, setTimer] = useState(status[0].timer);
-  const [currentStatus, setCurrentStatus] = useState(status[0].id);
   const [isActive, setIsActive] = useState(false);
 
   return (
