@@ -97,7 +97,7 @@ const TimerControls = ({
   };
 
   const handleTimer = (e) => {
-    const btn = e.target.innerText;
+    const btn = e.currentTarget.title;
     switch (btn) {
       case "Reset":
         resetTimer();
