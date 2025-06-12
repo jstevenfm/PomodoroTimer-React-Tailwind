@@ -1,8 +1,7 @@
-[ ] Change theme depending state
-    [  ] Use document.body.classList.toggle // Se puede utilizar useEffect<!------ Ver video 2 del curso de react de midudev  -------->
 [ ] 
 [ ] 
 [ ] 
+----------------------------------
 [ X ] Add To-Do section
 [ X ] Add delimiting Colors
 [ X ] Add initial state Timer
@@ -30,3 +29,5 @@
 [ X ] Change the button radio in change state  <!------ Usar map para cambiar esta del radio button y los timers // Use state checked-->
 [ X ] Change Button name to Icons
 [ X ] Fix Control Buttons
+[ X ] Change theme depending state
+    [ x ] Use document.body.classList.toggle // Se puede utilizar useEffect<!------ Ver video 2 del curso de react de midudev  -------->
