@@ -1,6 +1,6 @@
 import TaskListItem from "../../ui/TaskListItem";
 
-const TasksList = ({ tasks, setTasks }) => {
+const TasksList = ({ currentStatus, tasks, setTasks }) => {
   const handleCompleteTask = (id) => {
     setTasks(
       tasks.map((task) =>
@@ -23,6 +23,7 @@ const TasksList = ({ tasks, setTasks }) => {
           completed={task.completed}
           onClickCheckbox={() => handleCompleteTask(task.id)}
           onClickDeleteBtn={() => deleteTask(task.id)}
+          currentStatus={currentStatus}
         ></TaskListItem>
       ))}
     </ul>

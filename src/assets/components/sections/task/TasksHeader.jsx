@@ -4,7 +4,7 @@ import InputNewTask from "./InputNewTask";
 
 import IconAddTask from '../../icons/IconAddTask'
 
-const TasksHeader = ({ setTasks }) => {
+const TasksHeader = ({ setTasks, currentStatus }) => {
   const [showInputNewTask, setShowInputNewTask] = useState(false)
 
   const toggleInputNewTask = () => {
@@ -19,7 +19,7 @@ const TasksHeader = ({ setTasks }) => {
           <IconAddTask />
         </button>
       </header>
-      <InputNewTask setTasks={setTasks} setShowInputNewTask={setShowInputNewTask} className={showInputNewTask ? '' : 'hidden'} />
+      <InputNewTask currentStatus={currentStatus} setTasks={setTasks} setShowInputNewTask={setShowInputNewTask} className={showInputNewTask ? '' : 'hidden'} />
     </>
   );
 };

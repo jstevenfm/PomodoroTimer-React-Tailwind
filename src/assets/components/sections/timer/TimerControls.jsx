@@ -116,8 +116,15 @@ const TimerControls = ({
     }
   };
 
+  const stylesComponent =
+    currentStatus === "pomodoro"
+      ? "bg-golden-sand-200"
+      : currentStatus === "short-break"
+      ? "bg-ziggurat-200"
+      : "bg-cruise-200"
+
   return (
-    <div className="py-2 px-5 w-3/4 max-w-72 grid grid-cols-3 justify-items-center bg-yellow-100 rounded-3xl shadow-sm">
+    <div className={`py-2 px-5 w-3/4 max-w-72 grid grid-cols-3 justify-items-center rounded-3xl shadow-sm ${stylesComponent}`}>
       {controls.map((control) => (
         <BtnTimerControls
           key={control.title}

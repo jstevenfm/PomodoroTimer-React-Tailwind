@@ -3,11 +3,18 @@ import { useEffect, useState } from "react"
 import TasksHeader from "./TasksHeader"
 import TasksList from "./TasksList"
 
-const TasksContainer = () => {
+const TasksContainer = ({ currentStatus }) => {
   const [tasks, setTasks] = useState(() => {
     const savedTasks = localStorage.getItem("tasks")
     return savedTasks ? JSON.parse(savedTasks) : []
   })
+
+  const stylesComponent =
+    currentStatus === "pomodoro"
+      ? "bg-golden-sand-200"
+      : currentStatus === "short-break"
+      ? "bg-ziggurat-200"
+      : "bg-cruise-200"
 
   useEffect(() => {
     localStorage.setItem('tasks', JSON.stringify(tasks))
@@ -22,9 +29,9 @@ const TasksContainer = () => {
   }, [tasks])
 
   return (
-    <section className="p-5 rounded-3xl bg-yellow-100 shadow-sm">
-      <TasksHeader setTasks={setTasks} />
-      <TasksList tasks={tasks} setTasks={setTasks} />
+    <section className={`p-5 rounded-3xl shadow-sm ${stylesComponent}`}>
+      <TasksHeader setTasks={setTasks} currentStatus={currentStatus} />
+      <TasksList currentStatus={currentStatus} tasks={tasks} setTasks={setTasks} />
     </section>
   )
 }

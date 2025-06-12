@@ -1,7 +1,14 @@
 import IconAcceptTask from "../../icons/IconAcceptTask"
 import IconCancelTask from "../../icons/IconCancelTask"
 
-const InputNewTask = ({ setTasks, className, setShowInputNewTask }) => {
+const InputNewTask = ({ currentStatus, setTasks, className, setShowInputNewTask }) => {
+
+  const stylesComponent =
+    currentStatus === "pomodoro"
+      ? "bg-golden-sand-400"
+      : currentStatus === "short-break"
+      ? "bg-ziggurat-400"
+      : "bg-cruise-400"
 
   const addNewTask = (e) => {
     e.preventDefault();
@@ -21,7 +28,7 @@ const InputNewTask = ({ setTasks, className, setShowInputNewTask }) => {
   };
 
   return (
-    <form onSubmit={addNewTask} className={`flex justify-between items-center bg-yellow-300 mt-5 rounded-xl p-4 gap-4 ${className}`}>
+    <form onSubmit={addNewTask} className={`flex justify-between items-center mt-5 rounded-xl p-4 gap-4 ${className} ${stylesComponent}`}>
       <input type="text" name="title" className="flex-2/3" />
         <button title="Accept New Task" className="hover:scale-105 cursor-pointer" type="submit" >
           <IconAcceptTask />
