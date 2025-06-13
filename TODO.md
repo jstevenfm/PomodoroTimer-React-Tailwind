@@ -1,7 +1,7 @@
 [ ] Change styles checkbox
 [ ] Add Styles when input Status is checked
 [ ] Change input add new task - Improve visibility
-[ ] 
+[ ] Add styles responsive
 [ ] 
 [ ] 
 ----------------------------------
