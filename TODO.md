@@ -1,4 +1,3 @@
-[ ] Change styles checkbox
 [ ] Change input add new task - Improve visibility
 [ ] Add styles responsive
 [ ] 
@@ -34,3 +33,4 @@
 [ X ] Change theme depending state
     [ x ] Use document.body.classList.toggle // Se puede utilizar useEffect<!------ Ver video 2 del curso de react de midudev  -------->
 [ X ] Add Styles when input Status is checked
+[ X ] Change styles checkbox
