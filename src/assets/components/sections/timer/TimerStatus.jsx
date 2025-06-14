@@ -35,7 +35,7 @@ const TimerStatus = ({
   };
 
   return (
-    <fieldset className={`w-full grid grid-cols-3 rounded-3xl shadow-sm ${stylesComponent}`}>
+    <fieldset className={`w-full grid grid-cols-3 rounded-4xl shadow-sm ${stylesComponent}`}>
       {status.map((item) => (
         <ButtonRadioStatus
           key={item.id}
