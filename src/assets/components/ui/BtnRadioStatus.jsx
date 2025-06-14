@@ -1,10 +1,37 @@
-const ButtonRadioStatus = ({id, text, onClick, defaultChecked }) => {
+const ButtonRadioStatus = ({
+  id,
+  text,
+  onClick,
+  defaultChecked,
+  currentStatus,
+}) => {
+  let stylesComponent = "";
+  if (id === "pomodoro" && currentStatus === "pomodoro") {
+    stylesComponent = "peer-checked/pomodoro:bg-golden-sand-500 shadow-sm";
+  } else if (id === "short-break" && currentStatus === "short-break") {
+    stylesComponent = "peer-checked/short-break:bg-ziggurat-500 shadow-sm";
+  } else if (id === "long-break" && currentStatus === "long-break") {
+    stylesComponent = "peer-checked/long-break:bg-cruise-500 shadow-sm";
+  }
+
   return (
     <>
-        <input type="radio" id={id} name="status" className="hidden" onClick={onClick} defaultChecked={defaultChecked} />
-        <label htmlFor={id} className="px-2.5 cursor-pointer text-center hover:scale-105">{text}</label>
+      <input
+        type="radio"
+        id={id}
+        name="status"
+        className={`hidden peer/${id}`}
+        onClick={onClick}
+        defaultChecked={defaultChecked}
+      />
+      <label
+        htmlFor={id}
+        className={`py-4 px-2.5 rounded-3xl cursor-pointer text-center hover:scale-105 ${stylesComponent}`}
+      >
+        {text}
+      </label>
     </>
-  )
-}
+  );
+};
 
-export default ButtonRadioStatus
+export default ButtonRadioStatus;
