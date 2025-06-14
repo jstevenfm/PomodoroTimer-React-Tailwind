@@ -26,7 +26,7 @@ const ButtonRadioStatus = ({
       />
       <label
         htmlFor={id}
-        className={`p-4 rounded-4xl cursor-pointer text-center hover:scale-110 ${stylesComponent}`}
+        className={`p-4 rounded-4xl cursor-pointer text-center hover:scale-115 ${stylesComponent}`}
       >
         {text}
       </label>
