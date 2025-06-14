@@ -6,9 +6,9 @@ const Header = () => {
     <header className="flex justify-between w-full p-4">
       <a className="flex cursor-pointer hover:scale-110" href="/">
         <Logo />
-        <h1 className="px-3 self-center text-xl font-semibold">Pomodoro Timer</h1>
+        <h1 className="px-3 self-center text-2xl font-semibold">Pomodoro Timer</h1>
       </a>
-      <button title='Settings' className="cursor-pointer hover:scale-110">
+      <button title='Settings' className="cursor-pointer hover:scale-120">
         <IconSettings />
       </button>
     </header>
