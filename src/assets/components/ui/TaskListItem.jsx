@@ -8,7 +8,6 @@ const TaskListItem = ({
   onClickCheckbox,
   onClickDeleteBtn,
 }) => {
-
   const stylesComponent =
     currentStatus === "pomodoro"
       ? "bg-golden-sand-400"
@@ -24,7 +23,7 @@ const TaskListItem = ({
         id={taskTitle}
         name={taskTitle}
         onChange={onClickCheckbox}
-        className="cursor-pointer"
+        className="cursor-pointer w-5 h-5 appearance-none border border-solid rounded-full checked:bg-[url(../src/assets/components/icons/checkTask.svg)]"
       />
       <label htmlFor={taskTitle} id={taskId} className=" flex-1/2">
         {taskTitle}
