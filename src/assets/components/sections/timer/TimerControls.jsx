@@ -124,7 +124,7 @@ const TimerControls = ({
       : "bg-cruise-200"
 
   return (
-    <div className={`py-2 px-5 w-3/4 max-w-72 grid grid-cols-3 justify-items-center rounded-3xl shadow-sm ${stylesComponent}`}>
+    <div className={`w-3/4 max-w-72 grid grid-cols-3 justify-items-center rounded-4xl shadow-sm ${stylesComponent}`}>
       {controls.map((control) => (
         <BtnTimerControls
           key={control.title}

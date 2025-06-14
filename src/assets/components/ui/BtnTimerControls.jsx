@@ -14,7 +14,7 @@ const BtnTimerControls = ({ title, onclick, className }) => {
   const IconComponent = iconsControls[title] || IconPlay
   return (
     <button
-      className={`cursor-pointer hover:scale-105 ${className}`}
+      className={`py-3 px-5 cursor-pointer hover:scale-120 ${className}`}
       title={title}
       onClick={onclick}
     >
