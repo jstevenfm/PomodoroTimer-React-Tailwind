@@ -15,7 +15,7 @@ const TasksHeader = ({ setTasks, currentStatus }) => {
     <>
       <header className="flex justify-between items-center">
         <h2 className="text-xl font-medium">Tasks</h2>
-        <button title="Add New Task" onClick={toggleInputNewTask} className="cursor-pointer" >
+        <button title="Add New Task" onClick={toggleInputNewTask} className="cursor-pointer hover:scale-120" >
           <IconAddTask />
         </button>
       </header>
