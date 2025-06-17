@@ -16,7 +16,7 @@ const TaskListItem = ({
       : "bg-cruise-400"
 
   return (
-    <li className={`flex justify-between mt-5 rounded-xl gap-3 p-5 ${stylesComponent}`}>
+    <li className={`flex justify-between mt-5 rounded-xl gap-3 p-5 shadow-xs ${stylesComponent}`}>
       <input
         type="checkbox"
         checked={completed}
