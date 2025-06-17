@@ -28,8 +28,8 @@ const InputNewTask = ({ currentStatus, setTasks, className, setShowInputNewTask 
   };
 
   return (
-    <form onSubmit={addNewTask} className={`flex justify-between items-center mt-5 rounded-xl p-4 gap-4 ${className} ${stylesComponent}`}>
-      <input type="text" name="title" className="flex-2/3" placeholder="Name Task" />
+    <form onSubmit={addNewTask} className={`flex justify-between items-center mt-5 rounded-xl p-4 gap-4 shadow-sm ${className} ${stylesComponent}`}>
+      <input type="text" name="title" className="flex-2/3 p-2 placeholder:text-black/50" placeholder="Write your name task" />
         <button title="Accept New Task" className="hover:scale-105 cursor-pointer" type="submit" >
           <IconAcceptTask />
         </button>
