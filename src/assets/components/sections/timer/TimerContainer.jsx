@@ -11,7 +11,7 @@ const TimerContainer = ({ currentStatus, setCurrentStatus }) => {
   const [isActive, setIsActive] = useState(false);
 
   return (
-    <section className="flex flex-col items-center justify-center my-14 mx-auto">
+    <section className="flex flex-col items-center justify-center my-14 mx-auto lg:w-[45%] lg:my-16 lg:mx-0 lg:self-start">
       <TimerStatus
         setTimer={setTimer}
         status={status}

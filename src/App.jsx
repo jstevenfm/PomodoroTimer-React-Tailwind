@@ -33,7 +33,7 @@ function App() {
   return (
     <>
       <Header />
-      <main className="flex flex-col">
+      <main className="flex flex-col lg:flex-row-reverse lg:justify-evenly lg:max-w-7xl lg:m-auto">
         <TimerContainer
           currentStatus={currentStatus}
           setCurrentStatus={setCurrentStatus}
