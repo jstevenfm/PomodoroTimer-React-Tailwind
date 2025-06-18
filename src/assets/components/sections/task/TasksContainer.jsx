@@ -29,7 +29,7 @@ const TasksContainer = ({ currentStatus }) => {
   }, [tasks])
 
   return (
-    <section className={`p-5 rounded-3xl shadow-sm ${stylesComponent} lg:w-[45%] lg:my-16 lg:mx-0 lg:self-start`}>
+    <section className={`p-5 rounded-3xl shadow-sm ${stylesComponent} lg:w-[45%] lg:my-16 lg:mx-0 lg:self-start lg:max-h-[70dvh] overflow-auto`}>
       <TasksHeader setTasks={setTasks} currentStatus={currentStatus} />
       <TasksList currentStatus={currentStatus} tasks={tasks} setTasks={setTasks} />
     </section>
