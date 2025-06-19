@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 
 import BtnTimerControls from "../../ui/BtnTimerControls";
 
+const soundBell1 = new Audio("/public/bell1.mp3");
+
 const TimerControls = ({
   setTimer,
   status,
@@ -59,6 +61,7 @@ const TimerControls = ({
           }
           if (minutes < 0) {
             clearInterval(interval);
+            soundBell1.play();
             setTimeout(() => {
               nextState();
             }, 0);
