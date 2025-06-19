@@ -1,4 +1,3 @@
-[ ] Add styles responsive
 [ ] 
 [ ] 
 ----------------------------------
@@ -34,3 +33,4 @@
 [ X ] Add Styles when input Status is checked
 [ X ] Change styles checkbox
 [ X ] Change input add new task - Improve visibility
+[ X ] Add styles responsive
