@@ -1,4 +1,3 @@
-[ ] Add sound for finish timer
 [ ] 
 [ ] 
 ----------------------------------
@@ -35,3 +34,4 @@
 [ X ] Change styles checkbox
 [ X ] Change input add new task - Improve visibility
 [ X ] Add styles responsive
+[ X ] Add sound for finish timer
